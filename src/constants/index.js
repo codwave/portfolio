@@ -36,6 +36,19 @@ import {
   yourlogo,
 } from "../assets";
 
+import ReactIcon from "../assets/svg/ReactIcon.svg"
+import NextJS from "../assets/technologies/NextJS.svg"
+import Mongo from "../assets/technologies/Mongo.svg"
+import Node from "../assets/technologies/Node.svg"
+import Express from "../assets/technologies/express.svg"
+import vercel from "../assets/technologies/hostinger.svg"
+
+
+
+
+
+
+
 export const navigation = [
   {
     id: "0",
@@ -52,7 +65,7 @@ export const navigation = [
     title: "Our Work",
     url: "#how-to-use",
   },
- 
+
 
   {
     id: "3",
@@ -119,21 +132,21 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "With the latest technology, it's the perfect solution for businesses looking to elevate their online presence";
 
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
+    title: "Seamless user Interface",
     text: collabText,
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Scalable",
   },
   {
     id: "2",
-    title: "Top-notch Security",
+    title: "Multi Plaform Support",
   },
 ];
 
@@ -147,36 +160,36 @@ export const collabApps = [
   },
   {
     id: "1",
-    title: "Notion",
-    icon: notion,
+    title: "React",
+    icon: ReactIcon,
     width: 34,
     height: 36,
   },
   {
     id: "2",
-    title: "Discord",
-    icon: discord,
+    title: "NextJS",
+    icon: NextJS,
     width: 36,
     height: 28,
   },
   {
     id: "3",
-    title: "Slack",
-    icon: slack,
+    title: "NodeJs",
+    icon: Node,
     width: 34,
     height: 35,
   },
   {
     id: "4",
-    title: "Photoshop",
-    icon: photoshop,
+    title: "express",
+    icon: Express,
     width: 34,
     height: 34,
   },
   {
     id: "5",
-    title: "Protopie",
-    icon: protopie,
+    title: "MongoDB",
+    icon: Mongo,
     width: 34,
     height: 34,
   },
@@ -189,10 +202,10 @@ export const collabApps = [
   },
   {
     id: "7",
-    title: "Raindrop",
-    icon: raindrop,
-    width: 38,
-    height: 32,
+    title: "Vercel",
+    icon: vercel,
+    width: 22,
+    height: 22,
   },
 ];
 
@@ -235,16 +248,16 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "UI/UX",
+    text: "We create user-friendly interfaces that captivate and engage. Our expert team designs intuitive, visually appealing, and functional experiences to elevate your brand and achieve your business goals.",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Frontend",
+    text: "We offer top-tier front-end development, crafting responsive, high-performance websites and applications. Using the latest Technologies we build visually stunning, interactive interfaces for a seamless user experience across all devices.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -252,16 +265,16 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    title: "Backend",
+    text: "We specialize in backend development, creating robust systems and APIs to power your applications. Our expertise includes Node.js, Express.js etc ensuring scalable, secure solutions tailored to your business.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "REST APIs",
+    text: "Creating powerful and scalable REST APIs to drive seamless communication between applications and services.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
@@ -269,16 +282,16 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Database",
+    text: "Optimized database solutions for efficient data storage and management",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Maintenance",
+    text: "Ongoing website maintenance for optimal performance, security, and functionality.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,

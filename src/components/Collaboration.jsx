@@ -10,7 +10,7 @@ const Collaboration = () => {
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
           <h2 className="h2 mb-4 md:mb-8">
-            AI Chat App for seamless collaboration
+            Technologies we work on
           </h2>
 
           <ul className="max-w-[22rem] mb-10 md:mb-14">
@@ -49,11 +49,12 @@ const Collaboration = () => {
               </div>
             </div>
 
-            <ul>
+            <ul className="">
+            
               {collabApps.map((app, index) => (
                 <li
                   key={app.id}
-                  className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${
+                  className={` absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${
                     index * 45
                   }`}
                 >
@@ -70,6 +71,7 @@ const Collaboration = () => {
                       src={app.icon}
                     />
                   </div>
+                  
                 </li>
               ))}
             </ul>
