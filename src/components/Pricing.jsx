@@ -3,6 +3,7 @@ import { smallSphere, stars } from "../assets";
 import Heading from "./Heading";
 import PricingList from "./PricingList";
 import { LeftLine, RightLine } from "./design/Pricing";
+import Contact from "./Contact";
 
 const Pricing = () => {
   return (
@@ -28,24 +29,21 @@ const Pricing = () => {
         </div>
 
         <Heading
-          tag="Get started with Brainwave"
-          title="Pay once, use forever"
+          tag="Get started with CodeWave"
+          title="Contact us "
         />
 
         <div className="relative">
-          <PricingList />
+          {/* <PricingList /> */}
+          <Contact/>
           <LeftLine />
           <RightLine />
         </div>
+        {/* <div>
+          <Contact/>
+        </div> */}
 
-        <div className="flex justify-center mt-10">
-          <a
-            className="text-xs font-code font-bold tracking-wider uppercase border-b"
-            href="/pricing"
-          >
-            See the full details
-          </a>
-        </div>
+        
       </div>
     </Section>
   );
