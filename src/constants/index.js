@@ -101,9 +101,9 @@ export const brainwaveServicesIcons = [
 export const roadmap = [
   {
     id: "0",
-    title: "1) Preparing Figma designs",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
-    date: "May 2023",
+    title: "1) Creating Visually Stunning Designs",
+    text: "Collaborate with clients to craft detailed wireframes and mockups using Figma.",
+    date: "Within 2 days",
     status: "done",
     defaultOptions: {
       loop: true,
@@ -117,10 +117,10 @@ export const roadmap = [
   },
   {
     id: "1",
-    title: "2) Getting started with Frontend",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
-    date: "May 2023",
-    status: "progress",
+    title: "2) Bringing Designs to Life with Code",
+    text: "Develop responsive and interactive interfaces.",
+    date: "Within 1 week",
+    status: "done",
     defaultOptions: {
       loop: true,
       autoplay: true,
@@ -132,19 +132,33 @@ export const roadmap = [
   },
   {
     id: "2",
-    title: "Chatbot customization",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
-    date: "May 2023",
+    title: "3)Building Robust and Scalable Systems:",
+    text: "Create reliable server-side logic, integrate secure databases.",
+    date: "2nd Week",
     status: "done",
-    imageUrl: roadmap3,
+    defaultOptions: {
+      loop: true,
+      autoplay: true,
+      animationData: roadmap3,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice"
+      }
+    },
   },
   {
     id: "3",
-    title: "Integration with APIs",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-    date: "May 2023",
+    title: "4) Making Your Application Live",
+    text: "Optimize performance, deploy on reliable hosting platforms, and ensure continuous monitoring and maintenance.",
+    date: "The Next day",
     status: "progress",
-    imageUrl: roadmap4,
+    defaultOptions: {
+      loop: true,
+      autoplay: true,
+      animationData: roadmap4,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice"
+      }
+    },
   },
 ];
 

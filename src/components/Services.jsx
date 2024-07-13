@@ -81,10 +81,11 @@ const Services = () => {
 
             <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
               <div className="py-12 px-4 xl:px-8">
-                <h4 className="h4 mb-4">. . . . And Much More</h4>
+                <h4 className="h4 mb-4">. . . . And Many More</h4>
                 <p className="body-2 mb-[2rem] text-n-3">
-                  The world’s most powerful AI photo and video art generation
-                  engine. What will you create?
+                At CodeWave, our mission is to deliver high-quality, user-centric solutions that exceed your expectations. Contact us today to get started on your next project and see how we can turn your ideas into a reality!
+
+
                 </p>
 
                 <ul className="flex items-center justify-between">
