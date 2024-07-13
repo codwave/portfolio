@@ -1,22 +1,48 @@
+import React from "react";
+import Marquee from "react-marquee-slider";
+import styled, { keyframes } from "styled-components";
 import { companyLogos } from "../constants";
+
+const CompanyLogosContainer = styled.div`
+  overflow: hidden;
+  width: 100%;
+`;
+
+const LogoWrapper = styled.div`
+  display: inline-block; /* Ensures logos are in-line */
+  padding: 0 0.5rem; /* Adjust padding as needed */
+`;
+
+const neonEffect = keyframes`
+  from {
+    text-shadow: 0 0 5px rgba(200, 150, 250, 0.6), 0 0 10px rgba(200, 150, 250, 0.6), 0 0 15px rgba(200, 150, 250, 0.6);
+  }
+  to {
+    text-shadow: 0 0 2px rgba(200, 150, 250, 0.8), 0 0 5px rgba(200, 150, 250, 0.8), 0 0 10px rgba(200, 150, 250, 0.8);
+  }
+`;
+
+const StyledText = styled.div`
+  display: inline-block;
+  white-space: nowrap; /* Prevents text from wrapping */
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: lavender; /* Lavender color */
+  animation: ${neonEffect} 1.5s ease-in-out infinite alternate; /* Neon animation */
+`;
 
 const CompanyLogos = ({ className }) => {
   return (
-    <div className={className}>
-      <h5 className="tagline mb-6 text-center text-n-1/50">
-        Helping people create beautiful content at
-      </h5>
-      <ul className="flex">
+    <CompanyLogosContainer className={className}>
+      <Marquee velocity={20} spacing={0}>
         {companyLogos.map((logo, index) => (
-          <li
-            className="flex items-center justify-center flex-1 h-[8.5rem]"
-            key={index}
-          >
-            <img src={logo} width={134} height={28} alt={logo} />
-          </li>
+          <LogoWrapper key={index}>
+            <StyledText>
+              Creative ◊ Innovative ◊ Technology ◊</StyledText>
+          </LogoWrapper>
         ))}
-      </ul>
-    </div>
+      </Marquee>
+    </CompanyLogosContainer>
   );
 };
 
