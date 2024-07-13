@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../assets/services/Portfolio.jpg"; // Replace with the actual path to your image
+import image from "../assets/services/Portfolio.jpg"; 
 
 const InfiniteScroll = () => {
   return (
