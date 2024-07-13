@@ -1,13 +1,18 @@
 import React from "react";
-import image from "../assets/services/Portfolio.jpg"; 
+import image1 from "../assets/services/4.png"; 
+import image2 from "../assets/services/6.png"; 
+import image3 from "../assets/services/7.png"; 
+import image4 from "../assets/services/8.png"; 
 
 const InfiniteScroll = () => {
   return (
     <div className="scroll-container ">
       <div className="scroll-content">
-        <img src={image} className=" " alt="Scrolling" />
-        <img src={image} className=" " alt="Scrolling" />
-        <img src={image} className="" alt="Scrolling" />        
+        <img src={image1} className=" " alt="Scrolling" />
+        <img src={image2} className=" " alt="Scrolling" />
+        <img src={image3} className="" alt="Scrolling" /> 
+        <img src={image4} className="" alt="Scrolling" /> 
+
       </div>
     </div>
   );

@@ -36,7 +36,7 @@ const Services = () => {
             </div>
 
             <div className="relative z-1 max-w-[19rem] ml-auto">
-              <h4 className="h4 mb-4">Morden Portfolios</h4>
+              <h4 className="h4 mb-4">Landing Pages / Websites</h4>
               
               <ul className="body-2">
                 {brainwaveServices.map((item, index) => (

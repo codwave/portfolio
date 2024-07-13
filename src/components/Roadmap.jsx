@@ -1,9 +1,11 @@
+import React from "react";
+import Lottie from "react-lottie";
 import Button from "./Button";
 import Heading from "./Heading";
 import Section from "./Section";
 import Tagline from "./Tagline";
 import { roadmap } from "../constants";
-import { check2, grid, loading1 } from "../assets";
+import { check2, loading1 } from "../assets";
 import { Gradient } from "./design/Roadmap";
 
 const Roadmap = () => (
@@ -14,6 +16,7 @@ const Roadmap = () => (
       <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
         {roadmap.map((item) => {
           const status = item.status === "done" ? "Done" : "In progress";
+          const defaultOptions = item.defaultOptions ? item.defaultOptions : {};
 
           return (
             <div
@@ -24,13 +27,7 @@ const Roadmap = () => (
             >
               <div className="relative p-8 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-15">
                 <div className="absolute top-0 left-0 max-w-full">
-                  <img
-                    className="w-full"
-                    src={grid}
-                    width={550}
-                    height={550}
-                    alt="Grid"
-                  />
+                  {/* <Lottie options={defaultOptions} height={350}  /> */}
                 </div>
                 <div className="relative z-1">
                   <div className="flex items-center justify-between max-w-[27rem] mb-8 md:mb-20">
@@ -49,13 +46,9 @@ const Roadmap = () => (
                   </div>
 
                   <div className="mb-10 -my-10 -mx-15">
-                    <img
-                      className="w-full"
-                      src={item.imageUrl}
-                      width={628}
-                      height={426}
-                      alt={item.title}
-                    />
+                    {item.defaultOptions && (
+                      <Lottie options={item.defaultOptions} height={400} width={360} />
+                    )}
                   </div>
                   <h4 className="h4 mb-4">{item.title}</h4>
                   <p className="body-2 text-n-4">{item.text}</p>

@@ -42,6 +42,7 @@ import Mongo from "../assets/technologies/Mongo.svg"
 import Node from "../assets/technologies/Node.svg"
 import Express from "../assets/technologies/express.svg"
 import vercel from "../assets/technologies/hostinger.svg"
+import Lottie from "react-lottie";
 
 
 
@@ -100,20 +101,34 @@ export const brainwaveServicesIcons = [
 export const roadmap = [
   {
     id: "0",
-    title: "Voice recognition",
+    title: "1) Preparing Figma designs",
     text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
     date: "May 2023",
     status: "done",
-    imageUrl: roadmap1,
+    defaultOptions: {
+      loop: true,
+      autoplay: true,
+      animationData: roadmap1,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice"
+      }
+    },
     colorful: true,
   },
   {
     id: "1",
-    title: "Gamification",
+    title: "2) Getting started with Frontend",
     text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
     date: "May 2023",
     status: "progress",
-    imageUrl: roadmap2,
+    defaultOptions: {
+      loop: true,
+      autoplay: true,
+      animationData: roadmap2,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice"
+      }
+    },
   },
   {
     id: "2",
@@ -131,6 +146,21 @@ export const roadmap = [
     status: "progress",
     imageUrl: roadmap4,
   },
+];
+
+export const animations=[
+  {
+    
+    "animation2": {
+      "loop": true,
+      "autoplay": true,
+      "animationData": "./path/to/animationData2.json",
+      "rendererSettings": {
+        "preserveAspectRatio": "xMidYMid slice"
+      }
+    }
+  }
+  
 ];
 
 export const collabText =
