@@ -10,12 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-just-parallax": "^3.1.16",
     "react-marquee-slider": "^1.1.5",
     "react-router-dom": "^6.22.1",
     "scroll-lock": "^2.1.5",
+    "tailwind-merge": "^2.4.0",
     "styled-components": "^6.1.11"
   },
   "devDependencies": {
@@ -28,7 +31,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "postcss": "^8.4.35",
-    "tailwindcss": "^3.4.1",
+    "tailwindcss": "^3.4.4",
     "vite": "^5.1.0"
   }
 }
