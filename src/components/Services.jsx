@@ -8,35 +8,36 @@ import {
   VideoBar,
   VideoChatMessage,
 } from "./design/Services";
+import Button from "./Button";
 
 import Generating from "./Generating";
+import InfiniteScroll from "./InfiniteScroll";
 
 const Services = () => {
   return (
     <Section id="how-to-use">
       <div className="container">
         <Heading
-          title="Generative AI made for creators."
-          text="Brainwave unlocks the potential of AI-powered applications"
+          title="Our Niche, Your Benefit."
+          text="CodeWave offers Insightful Projects for Your Specific Needs"
         />
 
         <div className="relative">
           <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]">
-            <div className="absolute top-0 left-0 w-full h-full pointer-events-none md:w-3/5 xl:w-auto">
-              <img
-                className="w-full h-full object-cover md:object-right"
+            <div className="absolute top-0 left-0 w-full h-full pointer-events-none md:w-3/5 lg:w-3/5 xl:w-3/5">
+              {/* <img
+                className="w-[65%] p-8   md:object-right"
                 width={800}
                 alt="Smartest AI"
                 height={730}
                 src={service1}
-              />
+              /> */}
+              <InfiniteScroll w={800}/>
             </div>
 
-            <div className="relative z-1 max-w-[17rem] ml-auto">
-              <h4 className="h4 mb-4">Smartest AI</h4>
-              <p className="body-2 mb-[3rem] text-n-3">
-                Brainwave unlocks the potential of AI-powered applications
-              </p>
+            <div className="relative z-1 max-w-[19rem] ml-auto">
+              <h4 className="h4 mb-4">Morden Portfolios</h4>
+              
               <ul className="body-2">
                 {brainwaveServices.map((item, index) => (
                   <li
@@ -48,9 +49,11 @@ const Services = () => {
                   </li>
                 ))}
               </ul>
+
+              <Button className="mt-5">Contact</Button>
             </div>
 
-            <Generating className="absolute left-4 right-4 bottom-4 border-n-1/10 border lg:left-1/2 lg-right-auto lg:bottom-8 lg:-translate-x-1/2" />
+            
           </div>
 
           <div className="relative z-1 grid gap-5 lg:grid-cols-2">
@@ -58,27 +61,27 @@ const Services = () => {
               <div className="absolute inset-0">
                 <img
                   src={service2}
-                  className="h-full w-full object-cover"
+                  className=" ecom h-full w-full object-cover translate-x-28 translate-y-10"
                   width={630}
                   height={750}
-                  alt="robot"
+                  alt="ecommerce phone"
                 />
               </div>
 
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
-                <h4 className="h4 mb-4">Photo editing</h4>
+                <h4 className="h4 mb-4">Ecommerce Websites</h4>
                 <p className="body-2 mb-[3rem] text-n-3">
-                  Automatically enhance your photos using our AI app&apos;s
-                  photo editing feature. Try it now!
+                  Get a fully functional and responsive ecommerce website 
                 </p>
+                <Button>Contact Now!</Button>
               </div>
 
-              <PhotoChatMessage />
+           
             </div>
 
             <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
               <div className="py-12 px-4 xl:px-8">
-                <h4 className="h4 mb-4">Video generation</h4>
+                <h4 className="h4 mb-4">. . . . And Much More</h4>
                 <p className="body-2 mb-[2rem] text-n-3">
                   The world’s most powerful AI photo and video art generation
                   engine. What will you create?
@@ -117,8 +120,8 @@ const Services = () => {
                   alt="Scary robot"
                 />
 
-                <VideoChatMessage />
-                <VideoBar />
+                
+                
               </div>
             </div>
           </div>

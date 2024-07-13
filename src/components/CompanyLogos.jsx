@@ -38,7 +38,7 @@ const CompanyLogos = ({ className }) => {
         {companyLogos.map((logo, index) => (
           <LogoWrapper key={index}>
             <StyledText>
-              Creative ◊ Innovative ◊ Technology ◊</StyledText>
+              Creative | Innovative | Technology |</StyledText>
           </LogoWrapper>
         ))}
       </Marquee>
