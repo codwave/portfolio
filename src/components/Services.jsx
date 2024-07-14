@@ -9,6 +9,7 @@ import {
   VideoChatMessage,
 } from "./design/Services";
 import Button from "./Button";
+import manymore from "../assets/manymore.png"
 
 import Generating from "./Generating";
 import InfiniteScroll from "./InfiniteScroll";
@@ -114,8 +115,8 @@ const Services = () => {
 
               <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
                 <img
-                  src={service3}
-                  className="w-full h-full object-cover"
+                  src={manymore}
+                  className="w-full h-full object-cover opacity-70 "
                   width={520}
                   height={400}
                   alt="Scary robot"
