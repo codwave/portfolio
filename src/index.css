@@ -108,8 +108,7 @@
 .scroll-content {
   display: flex;
   flex-direction: column;
-  
-  animation: scroll-up 150s linear infinite;
+  animation: scroll-up 90s linear infinite;
   gap: 0;
 }
 
@@ -177,11 +176,11 @@
 
 .cursor {
   position: fixed;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 3px solid;
-  transform: translate(-35%, -35%);
+  transform: translate(-30%, -30%);
   pointer-events: none;
   transition: width 100ms, height 100ms;
   z-index: 100000;
