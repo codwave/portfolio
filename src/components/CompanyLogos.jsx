@@ -9,26 +9,26 @@ const CompanyLogosContainer = styled.div`
 `;
 
 const LogoWrapper = styled.div`
-  display: inline-block; /* Ensures logos are in-line */
-  padding: 0 0.5rem; /* Adjust padding as needed */
+  display: inline-block; 
+  padding: 0 0.5rem; 
 `;
 
 const neonEffect = keyframes`
   from {
-    text-shadow: 0 0 5px rgba(200, 150, 250, 0.6), 0 0 10px rgba(200, 150, 250, 0.6), 0 0 15px rgba(200, 150, 250, 0.6);
+    text-shadow: 0 0 5px rgba(200, 150, 250, 0.2), 0 0 10px rgba(200, 150, 250, 0.2), 0 0 15px rgba(200, 150, 250, 0.2);
   }
   to {
-    text-shadow: 0 0 2px rgba(200, 150, 250, 0.8), 0 0 5px rgba(200, 150, 250, 0.8), 0 0 10px rgba(200, 150, 250, 0.8);
+    text-shadow: 0 0 2px rgba(200, 150, 250, 0.4), 0 0 5px rgba(200, 150, 250, 0.4), 0 0 10px rgba(200, 150, 250, 0.4);
   }
 `;
 
 const StyledText = styled.div`
   display: inline-block;
-  white-space: nowrap; /* Prevents text from wrapping */
-  font-size: 1.5rem;
+  white-space: nowrap; 
+  font-size: 1rem;
   font-weight: bold;
-  color: lavender; /* Lavender color */
-  animation: ${neonEffect} 1.5s ease-in-out infinite alternate; /* Neon animation */
+  color: lavender; 
+  animation: ${neonEffect} 1.5s ease-in-out infinite alternate; 
 `;
 
 const CompanyLogos = ({ className }) => {
