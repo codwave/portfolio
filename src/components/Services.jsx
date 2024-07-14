@@ -26,13 +26,6 @@ const Services = () => {
         <div className="relative">
           <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]">
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none md:w-3/5 lg:w-3/5 xl:w-3/5">
-              {/* <img
-                className="w-[65%] p-8   md:object-right"
-                width={800}
-                alt="Smartest AI"
-                height={730}
-                src={service1}
-              /> */}
               <InfiniteScroll w={800}/>
             </div>
 
@@ -53,8 +46,6 @@ const Services = () => {
 
               <Button className="mt-5">Contact</Button>
             </div>
-
-            
           </div>
 
           <div className="relative z-1 grid gap-5 lg:grid-cols-2">
@@ -62,11 +53,12 @@ const Services = () => {
               <div className="absolute inset-0">
                 <img
                   src={service2}
-                  className=" ecom h-full w-full object-cover translate-x-28 translate-y-10"
+                  className="ecom h-full w-full object-cover translate-x-3 translate-y-10 lg:translate-x-28 xl:translate-x-"
                   width={630}
                   height={750}
                   alt="ecommerce phone"
                 />
+                <div className="absolute inset-0 bg-black opacity-60"></div>
               </div>
 
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
@@ -76,17 +68,13 @@ const Services = () => {
                 </p>
                 <Button>Contact Now!</Button>
               </div>
-
-           
             </div>
 
             <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
               <div className="py-12 px-4 xl:px-8">
                 <h4 className="h4 mb-4">. . . . And Many More</h4>
                 <p className="body-2 mb-[2rem] text-n-3">
-                At CodeWave, our mission is to deliver high-quality, user-centric solutions that exceed your expectations. Contact us today to get started on your next project and see how we can turn your ideas into a reality!
-
-
+                  At CodeWave, our mission is to deliver high-quality, user-centric solutions that exceed your expectations. Contact us today to get started on your next project and see how we can turn your ideas into a reality!
                 </p>
 
                 <ul className="flex items-center justify-between">
@@ -116,14 +104,11 @@ const Services = () => {
               <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
                 <img
                   src={manymore}
-                  className="w-full h-full object-cover opacity-70 "
+                  className="w-full h-full object-cover opacity-70"
                   width={520}
                   height={400}
                   alt="Scary robot"
                 />
-
-                
-                
               </div>
             </div>
           </div>

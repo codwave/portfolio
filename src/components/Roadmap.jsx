@@ -45,9 +45,9 @@ const Roadmap = () => (
                     </div>
                   </div>
 
-                  <div className="mb-10 -my-10 -mx-15">
+                  <div className="mb-10 -my-5 -mx-15">
                     {item.defaultOptions && (
-                      <Lottie options={item.defaultOptions} height={400} width={360} />
+                      <Lottie options={item.defaultOptions} height={350} width={300} />
                     )}
                   </div>
                   <h4 className="h4 mb-4">{item.title}</h4>
