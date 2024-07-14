@@ -100,9 +100,9 @@ const Contact = () => {
                     <label htmlFor='message'>Message</label>
                     <textarea name='message' id='message' required />
                 </div>
-                <div className='space-x-3'>
-                    <Button className='w-1/5 mt-4 mb-9' type="submit">Submit</Button>
-                    <Button href="tel:+91 9098162141" white>
+                <div className='flex lg:flex-row xl:flex-row  flex-col gap-4 mt-4 mb-9'>
+                    <Button className='w-2/5 lg:w-1/5 xl:w-1/5' type="submit">Submit</Button>
+                    <Button className='w-2/5 lg:w-1/5 xl:w-1/5' href="tel:+91 9098162141" white>
                         Quick Call
                     </Button>
                 </div>

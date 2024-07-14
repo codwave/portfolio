@@ -187,6 +187,7 @@
   animation: borderColorCycle 5s linear infinite;
 }
 
+
 @media (max-width: 800px) {
   .cursor {
     display: none;
