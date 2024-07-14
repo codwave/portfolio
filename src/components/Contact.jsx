@@ -103,7 +103,7 @@ const Contact = () => {
                     <textarea name='message' id='message' required />
                 </div>
                 <div className='flex justify-end'>
-                <Button className='w-1/5 mt-4' type="submit">Submit</Button>
+                <Button className='w-1/5 mt-4 mb-9' type="submit">Submit</Button>
                 </div>
             </form>
            
