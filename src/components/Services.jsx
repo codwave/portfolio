@@ -16,7 +16,7 @@ import InfiniteScroll from "./InfiniteScroll";
 
 const Services = () => {
   return (
-    <Section id="how-to-use">
+    <Section id="services">
       <div className="container">
         <Heading
           title="Our Niche, Your Benefit."
@@ -44,7 +44,7 @@ const Services = () => {
                 ))}
               </ul>
 
-              <Button className="mt-5">Contact</Button>
+              <Button href='#contact' className="mt-5">Contact</Button>
             </div>
           </div>
 
@@ -66,7 +66,7 @@ const Services = () => {
                 <p className="body-2 mb-[3rem] text-n-3">
                   Get a fully functional and responsive ecommerce website 
                 </p>
-                <Button>Contact Now!</Button>
+                <Button href='#contact'>Contact Now!</Button>
               </div>
             </div>
 

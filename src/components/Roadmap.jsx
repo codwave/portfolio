@@ -9,7 +9,7 @@ import { check2, loading1 } from "../assets";
 import { Gradient } from "./design/Roadmap";
 
 const Roadmap = () => (
-  <Section className="overflow-hidden" id="roadmap">
+  <Section className="overflow-hidden" id="workflow">
     <div className="container md:pb-10">
       <Heading tag="Ready to get started ?" title="How We Work.." />
 

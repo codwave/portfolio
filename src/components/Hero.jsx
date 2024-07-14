@@ -49,7 +49,7 @@ const Hero = () => {
             animationInDelay={300}
             isVisible={true}
           >
-            <Button href="/contact" white>
+            <Button href="#contact" white>
               Get started
             </Button>
           </Animated>

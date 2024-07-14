@@ -59,19 +59,19 @@ export const navigation = [
   {
     id: "1",
     title: "Services",
-    url: "#pricing",
+    url: "#services",
   },
   {
     id: "2",
-    title: "Our Work",
-    url: "#how-to-use",
+    title: "Workflow",
+    url: "#workflow",
   },
 
 
   {
     id: "3",
     title: "Contact",
-    url: "#login",
+    url: "#contact",
     onlyMobile: true,
   },
 ];
