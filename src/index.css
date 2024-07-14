@@ -238,6 +238,26 @@
   resize: none;
 }
 
+.service_card0{
+  background-image: url('./assets/benefits/card-1.svg');
+}
+
+.service_card1{
+  background-image: url('./src/assets/benefits/card-2.svg');
+}
+
+.service_card2{
+  background-image: url('./src/assets/benefits/card-3.svg');
+}
+.service_card3{
+  background-image: url('./src/assets/benefits/card-4.svg');
+}
+.service_card4{
+  background-image: url('./src/assets/benefits/card-5.svg');
+}
+.service_card5{
+  background-image: url('./src/assets/benefits/card-6.svg');
+}
 
 
 
