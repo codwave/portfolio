@@ -86,9 +86,7 @@ const Contact = () => {
 
     return (
         <div className='contact-container flex flex-col justify-center items-center bg-n-8 border border-n-6 rounded-[2rem]'>
-             <div className='flex justify-center items-center mt-5  mb-5 p-5 h-10 font-bold text-green-300  '>
-                {result}
-            </div>
+
             <form className='contact-form' onSubmit={onSubmit}>
                 <div className='input-group'>
                     <label htmlFor='name'>Your Name</label>
@@ -102,11 +100,22 @@ const Contact = () => {
                     <label htmlFor='message'>Message</label>
                     <textarea name='message' id='message' required />
                 </div>
-                <div className='flex justify-end'>
-                <Button className='w-1/5 mt-4 mb-9' type="submit">Submit</Button>
+                <div className='space-x-3'>
+                    <Button className='w-1/5 mt-4 mb-9' type="submit">Submit</Button>
+                    <Button href="tel:+91 9098162141" white>
+                        Quick Call
+                    </Button>
                 </div>
+
+                <div className='flex justify-end'>
+
+                </div>
+
             </form>
-           
+            <div className='flex justify-center items-center mt-5  mb-5 p-5 h-10 font-bold text-green-300  '>
+                {result}
+            </div>
+
         </div>
     );
 }
