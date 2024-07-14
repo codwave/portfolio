@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import ButtonGradient from "./assets/svg/ButtonGradient";
 import Benefits from "./components/Benefits";
 import Collaboration from "./components/Collaboration";
@@ -9,19 +10,27 @@ import Roadmap from "./components/Roadmap";
 import Services from "./components/Services";
 
 const App = () => {
+  useEffect(() => {
+    const cursor = document.querySelector('.cursor');
+    document.addEventListener('mousemove', e => {
+      cursor.style.top = `${e.clientY}px`;
+      cursor.style.left = `${e.clientX}px`;
+    });
+  }, []);
+
   return (
     <>
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+        <div className="cursor"></div>
         <Header />
         <Hero />
         <Benefits />
         <Collaboration />
         <Services />
         <Roadmap />
-        <Pricing/>
+        <Pricing />
         <Footer />
       </div>
-
       <ButtonGradient />
     </>
   );

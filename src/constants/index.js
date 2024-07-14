@@ -136,7 +136,14 @@ export const roadmap = [
     text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
     date: "May 2023",
     status: "done",
-    imageUrl: roadmap3,
+    defaultOptions: {
+      loop: true,
+      autoplay: true,
+      animationData: roadmap3 ,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice"
+      }
+    },
   },
   {
     id: "3",
@@ -144,7 +151,14 @@ export const roadmap = [
     text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
     date: "May 2023",
     status: "progress",
-    imageUrl: roadmap4,
+    defaultOptions: {
+      loop: true,
+      autoplay: true,
+      animationData: roadmap4,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice"
+      }
+    },
   },
 ];
 
