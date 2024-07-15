@@ -58,18 +58,23 @@ export const navigation = [
   },
   {
     id: "1",
+    title: "Technologies",
+    url: "#tech",
+  },
+  {
+    id: "2",
     title: "Services",
     url: "#services",
   },
   {
-    id: "2",
+    id: "3",
     title: "Workflow",
     url: "#workflow",
   },
 
 
   {
-    id: "3",
+    id: "4",
     title: "Contact",
     url: "#contact",
     onlyMobile: true,
@@ -138,7 +143,7 @@ export const roadmap = [
     defaultOptions: {
       loop: true,
       autoplay: true,
-      animationData: roadmap3 ,
+      animationData: roadmap3,
       rendererSettings: {
         preserveAspectRatio: "xMidYMid slice"
       }
@@ -161,9 +166,9 @@ export const roadmap = [
   },
 ];
 
-export const animations=[
+export const animations = [
   {
-    
+
     "animation2": {
       "loop": true,
       "autoplay": true,
@@ -173,7 +178,7 @@ export const animations=[
       }
     }
   }
-  
+
 ];
 
 export const collabText =
