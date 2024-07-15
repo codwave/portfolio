@@ -66,7 +66,7 @@ const Contact = () => {
         setResult("Sending....");
         const formData = new FormData(event.target);
 
-        formData.append("access_key", "1381335d-e884-4f46-92e1-cf403e026abb");
+        formData.append("access_key", import.meta.env.VITE_ACCESS_KEY);
 
         const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
@@ -102,7 +102,7 @@ const Contact = () => {
                 </div>
                 <div className='flex lg:flex-row xl:flex-row  flex-col gap-4 mt-4 mb-9'>
                     <Button className='w-2/5 lg:w-1/5 xl:w-1/5' type="submit">Submit</Button>
-                    <Button className='w-2/5 lg:w-1/5 xl:w-1/5' href="tel:+91 9098162141" white>
+                    <Button className='w-2/5 lg:w-1/5 xl:w-1/5' href={import.meta.env.VITE_MOBILE_NUMBER} white>
                         Quick Call
                     </Button>
                 </div>
