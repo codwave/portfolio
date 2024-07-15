@@ -102,9 +102,9 @@ const Contact = () => {
                 </div>
                 <div className='flex lg:flex-row xl:flex-row  flex-col gap-4 mt-4 mb-9'>
                     <Button className='w-2/5 lg:w-1/5 xl:w-1/5' type="submit">Submit</Button>
-                    {/* <Button className='w-2/5 lg:w-1/5 xl:w-1/5' href={number} white>
-                        Quick Call
-                    </Button> */}
+                    <Button className='w-2/5 lg:w-1/5 xl:w-1/5' href='mailto:codewave74@gmail.com' white>
+                        Email
+                    </Button>
                 </div>
 
                 <div className='flex justify-end'>
