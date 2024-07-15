@@ -18,9 +18,6 @@ const Benefits = () => {
           {benefits.map((item) => (
             <div
               className={`block service_card${item.id} relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]`}
-              // style={{
-              //   backgroundImage: `url(${item.backgroundUrl})`,
-              // }}
               key={item.id}
             >
               <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
@@ -33,10 +30,12 @@ const Benefits = () => {
                     height={48}
                     alt={item.title}
                   />
-                  <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
+                  <a href="#contact" className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
                     Explore more
-                  </p>
-                  <Arrow />
+                  </a>
+                  <a href="#contact">
+                    <Arrow />
+                  </a>
                 </div>
               </div>
               
